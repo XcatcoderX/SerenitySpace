@@ -27,6 +27,8 @@ struct LifelinesView: View {
                         .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(Color("colorone"))
                     VStack(spacing: 16.0) {
+                        Text("Ages 13+")
+                            .font(.title)
                         Text("Placeholder line 1")
                             .font(.title2)
                         Text("Placeholder line 2")
@@ -43,6 +45,8 @@ struct LifelinesView: View {
                         .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(Color("colorthree"))
                     VStack(spacing: 16.0) {
+                        Text("Ages 18+")
+                            .font(.title)
                         Text("Placeholder line 1")
                             .font(.title2)
                         Text("Placeholder line 2")
@@ -64,5 +68,5 @@ struct LifelinesView: View {
 
 
 #Preview {
-    ContentView()
+    LifelinesView()
 }
