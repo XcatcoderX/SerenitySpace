@@ -6,8 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD9E442E2E39481D001F66B5 /* affirmationpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E442D2E39481D001F66B5 /* affirmationpage.swift */; };
+		BD9E44322E3969EA001F66B5 /* selfconfidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E44312E3969EA001F66B5 /* selfconfidence.swift */; };
+		BD9E44342E396A74001F66B5 /* anxiety.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E44332E396A74001F66B5 /* anxiety.swift */; };
+		BD9E44362E396A8E001F66B5 /* depression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E44352E396A8E001F66B5 /* depression.swift */; };
+		BD9E44382E396AAE001F66B5 /* motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E44372E396AAE001F66B5 /* motivation.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD8AF8F12E3933FD00D971EA /* SerenitySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerenitySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9E442D2E39481D001F66B5 /* affirmationpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = affirmationpage.swift; sourceTree = "<group>"; };
+		BD9E44312E3969EA001F66B5 /* selfconfidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfconfidence.swift; sourceTree = "<group>"; };
+		BD9E44332E396A74001F66B5 /* anxiety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anxiety.swift; sourceTree = "<group>"; };
+		BD9E44352E396A8E001F66B5 /* depression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = depression.swift; sourceTree = "<group>"; };
+		BD9E44372E396AAE001F66B5 /* motivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +45,11 @@
 		BD8AF8E82E3933FC00D971EA = {
 			isa = PBXGroup;
 			children = (
+				BD9E442D2E39481D001F66B5 /* affirmationpage.swift */,
+				BD9E44372E396AAE001F66B5 /* motivation.swift */,
+				BD9E44352E396A8E001F66B5 /* depression.swift */,
+				BD9E44332E396A74001F66B5 /* anxiety.swift */,
+				BD9E44312E3969EA001F66B5 /* selfconfidence.swift */,
 				BD8AF8F32E3933FD00D971EA /* SerenitySpace */,
 				BD8AF8F22E3933FD00D971EA /* Products */,
 			);
@@ -119,6 +137,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9E44342E396A74001F66B5 /* anxiety.swift in Sources */,
+				BD9E442E2E39481D001F66B5 /* affirmationpage.swift in Sources */,
+				BD9E44362E396A8E001F66B5 /* depression.swift in Sources */,
+				BD9E44382E396AAE001F66B5 /* motivation.swift in Sources */,
+				BD9E44322E3969EA001F66B5 /* selfconfidence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
