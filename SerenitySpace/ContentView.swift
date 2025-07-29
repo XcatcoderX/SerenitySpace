@@ -16,7 +16,10 @@ struct ContentView: View {
             Text("Hello, world!")
             Text("Change 1")
                 .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-            Text("hello bros")
+            Text("Change 2")
+            Text("Change 2.5")
+            Text("new change - simran")
+            Text("New change-Piyali")
         }
         .padding()
     }
