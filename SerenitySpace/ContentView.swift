@@ -17,6 +17,8 @@ struct ContentView: View {
             Text("Change 1")
             Text("i made a change yippee")
                 .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+            Text("Change 2")
+            Text("Change 2.5")
         }
         .padding()
     }
