@@ -10,13 +10,13 @@ import SwiftUI
 struct LifelinesView: View {
     var body: some View {
         ZStack{
-            Color("forgotname").ignoresSafeArea()
+            Color("bgcolor").ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .center, spacing: 16) {
                     ZStack {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                             .frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/65.0/*@END_MENU_TOKEN@*/)
-                            .foregroundColor(Color("fishy"))
+                            .foregroundColor(Color("colorone"))
                         Text("Lifelines")
                             .font(.largeTitle)
                             .fontWeight(.bold)
@@ -27,7 +27,7 @@ struct LifelinesView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                             .frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/330.0/*@END_MENU_TOKEN@*/)
-                            .foregroundColor(Color("colorone"))
+                            .foregroundColor(Color("thebestcolor"))
                         VStack(spacing: 16.0) {
                             Text("Ages 13+")
                                 .font(.title)
