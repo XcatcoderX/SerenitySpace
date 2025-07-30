@@ -48,12 +48,30 @@ struct ContentView: View {
                   Text("ℂ𝕠𝕞𝕞𝕠𝕟 𝕚𝕤𝕤𝕦𝕖𝕤")
                       .font(.largeTitle)
                       .multilineTextAlignment(.trailing)
+                      
                   RoundedRectangle(cornerRadius: 20)
                       .fill(.color2)
                       .frame(width: 359, height: 150)
-                      .padding(80)
+                      
               }//VStack
               
+              .toolbar {
+                  ToolbarItemGroup(placement: .status) {
+                      NavigationLink(destination: ContentView()) {
+                          Image(systemName: "house.fill")
+                              .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for affirmations
+                      }
+                      NavigationLink(destination: LifelinesView()) {
+                          Image(systemName: "phone.down.circle.fill")
+                              .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for settings
+                      }
+                      NavigationLink(destination: affirmationpage()) {
+                          Image(systemName: "person.fill.checkmark")
+                              .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for profile
+                      }
+                      
+                  }
+              }
               
               
               
