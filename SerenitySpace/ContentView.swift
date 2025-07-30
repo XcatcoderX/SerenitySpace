@@ -51,6 +51,73 @@ struct ContentView: View {
               RoundedRectangle(cornerRadius: 20)
                 .fill(.color2)
                 .frame(width: 359, height: 150)
+                .padding(8)
+                
+                
+                HStack{
+                 
+                    
+                    //navlink
+                    NavigationLink(destination: affirmationpage()) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.color1)
+                                .frame(width: 70, height: 70)
+                            Text("A")
+                        }//zstack
+                    }//navlink
+                    
+                    
+                    NavigationLink(destination: motivation()) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.color1)
+                                .frame(width: 70, height: 70)
+
+                            Text("M")
+                        }//zstack
+                    }//navlink
+                    
+                    
+                    NavigationLink(destination: depression()) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.color1)
+                                .frame(width: 70, height: 70)
+
+                            Text("D")
+                        }//zstack
+                    }//navlink
+                    
+                    
+                    NavigationLink(destination: anxiety()) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.color1)
+                                .frame(width: 70, height: 70)
+
+                            Text("A")
+                        }//zstack
+                    }//navlink
+                        
+                    NavigationLink(destination: selfconfidence()) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(.color1)
+                                .frame(width: 70, height: 70)
+
+                            Text("S")
+                        }//zstack
+                    }//navlink
+                    
+                    
+                }//Hstack
+                
+                
+                
+                
+                
+                
               Spacer()
             }//Zstack
           }//scrollview
