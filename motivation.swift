@@ -13,7 +13,8 @@ struct motivation: View {
             Color(.bgcolor)
                 .ignoresSafeArea()
             
-            ScrollView {VStack(spacing:20) {
+            ScrollView {
+                VStack(spacing:20) {
                 Text("Motivation")
                     .font(.largeTitle)
                 RoundedRectangle(cornerRadius: 20)
