@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct LifelinesView: View {
+    @State private var is13Plus = false
+    @State private var is18Plus = false
     var body: some View {
         ZStack{
+<<<<<<< HEAD
             Color("forgotname").ignoresSafeArea()
+=======
+            Color("bgcolor").ignoresSafeArea()
+>>>>>>> main
             ScrollView {
                 VStack(alignment: .center, spacing: 16) {
                     ZStack {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                             .frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/65.0/*@END_MENU_TOKEN@*/)
+<<<<<<< HEAD
                             .foregroundColor(Color("fishy"))
                         Text("Lifelines")
                             .font(.largeTitle)
@@ -76,13 +83,106 @@ struct LifelinesView: View {
                                 
                         }.padding()
                     }
+=======
+                            .foregroundColor(Color("colorone"))
+                        Text("𝕃𝕚𝕗𝕖𝕝𝕚𝕟𝕖𝕤")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .padding(.bottom)
+                    }
+                    .padding(.top, 50.0)
+                    Spacer()
+                    Toggle(isOn: $is13Plus) {
+                                    Text("13+")
+                                }
+                    .tint(.purple)
+                    Toggle(isOn: $is18Plus) {
+                                    Text("18+")
+                                }
+                    .tint(Color("forgotname"))
+                    if is13Plus {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 10.0)
+                                            .frame(width: 350.0, height: 330.0)
+                                            .foregroundColor(Color("thebestcolor"))
+                                        VStack(spacing: 16.0) {
+                                            Text("Ages 13+")
+                                                .font(.title)
+                                            Text("Suicide Prevention Lifeline: 988")
+                                                .font(.title2)
+                                            Text("Trevor Project Lifeline: 1-877-566-8860")
+                                                .font(.title2)
+                                            Text("Trans Lifeline: 1-877-584-3578")
+                                                .font(.title2)
+                                            Text("ImHurting Crisis Line: 1-800-584-3578")
+                                                .font(.title2)
+                                            Text("TeenLink: 1-866-833-6546")
+                                                .font(.title2)
+                                        }
+                                    }
+                            .padding()
+                    }
+                    if is18Plus {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                                .frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/)
+                                .foregroundColor(Color("colorthree"))
+                            VStack(spacing: 16.0) {
+                                Text("Ages 18+")
+                                    .font(.title)
+                                Text("Washington Recovery Help Line: 1-866-789-1511")
+                                    .font(.title2)
+                                    .multilineTextAlignment(.center)
+                            }
+                        }
+                    }
+                    
+                    ZStack {
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                            .frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/340.0/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(Color("colortwo"))
+                        VStack(spacing: 16.0) {
+                            Text("Other")
+                                .font(.title)
+                                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/40.0/*@END_MENU_TOKEN@*/)
+                            Text("Copline: 1-800-267-5463 (Only to be used by sworn law enforcement members and family)")
+                                .font(.title2)
+                                .multilineTextAlignment(.center)
+                                .frame(width: /*@START_MENU_TOKEN@*/320.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/130.0/*@END_MENU_TOKEN@*/)
+                                
+                            Text("The Institute on Aging's Friendships Line: 1-800-971-0016 (Only to be used by people 60+ or people with disabilities)")
+                                .font(.title2)
+                                .multilineTextAlignment(.center)
+                                .frame(width: /*@START_MENU_TOKEN@*/330.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/130.0/*@END_MENU_TOKEN@*/)
+                                
+                        }.padding()
+                    }
+>>>>>>> main
                     
                     Spacer()
                 }
                 .padding()
             }
         }
+        .toolbar {
+            ToolbarItemGroup(placement: .status) {
+                NavigationLink(destination: ContentView()) {
+                    Image(systemName: "house.fill")
+                        .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                }
+                NavigationLink(destination: LifelinesView()) {
+                    Image(systemName: "phone.down.circle.fill")
+                        .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                }
+                NavigationLink(destination: affirmationpage()) {
+                    Image(systemName: "person.fill.checkmark")
+                        .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                }
+                
+            }
+        }//toolbar
     }
+
 }
 
 
