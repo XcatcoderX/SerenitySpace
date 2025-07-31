@@ -27,8 +27,9 @@ struct ContentView: View {
                       RoundedRectangle(cornerRadius: 20)
                           .fill(.color4)
                           .frame(width: 359, height: 200)
-                      Text("Text description")
-                          .multilineTextAlignment(.trailing)
+                      Text("textdesc")
+                          .multilineTextAlignment(.center)
+                          .padding(.horizontal, 32.0)
                   }//zstack
                   Text("𝕐𝕠𝕦 𝕒𝕣𝕖𝕟'𝕥 𝕒𝕝𝕠𝕟𝕖.")
                       .font(.largeTitle)
