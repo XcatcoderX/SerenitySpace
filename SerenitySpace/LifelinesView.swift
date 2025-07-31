@@ -98,7 +98,7 @@ struct LifelinesView: View {
                 }
                 
             }
-        }
+        }//toolbar
     }
 
 }

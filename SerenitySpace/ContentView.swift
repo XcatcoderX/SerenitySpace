@@ -71,7 +71,7 @@ struct ContentView: View {
                       }
                       
                   }
-              }
+              }//toolbar
               
               
               
