@@ -19,20 +19,21 @@ struct LifelinesView: View {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                             .frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/65.0/*@END_MENU_TOKEN@*/)
                             .foregroundColor(Color("colorone"))
-                        Text("Lifelines")
+                        Text("𝕃𝕚𝕗𝕖𝕝𝕚𝕟𝕖𝕤")
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                            .padding(.top)
+                            .padding(.bottom)
                     }
                     .padding(.top, 50.0)
-                    
+                    Spacer()
                     Toggle(isOn: $is13Plus) {
                                     Text("13+")
                                 }
+                    .tint(.purple)
                     Toggle(isOn: $is18Plus) {
                                     Text("18+")
                                 }
-                    
+                    .tint(Color("forgotname"))
                     if is13Plus {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 10.0)
