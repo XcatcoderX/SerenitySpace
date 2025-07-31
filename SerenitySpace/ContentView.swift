@@ -34,45 +34,102 @@ struct ContentView: View {
                   }//zstack
                   Text("𝕐𝕠𝕦 𝕒𝕣𝕖𝕟'𝕥 𝕒𝕝𝕠𝕟𝕖.")
                       .font(.largeTitle)
+                  Text("𝘏𝘦𝘳𝘦 𝘢𝘳𝘦 𝘴𝘰𝘮𝘦 𝘸𝘦𝘣𝘴𝘪𝘵𝘦𝘴 𝘵𝘩𝘢𝘵 𝘮𝘢𝘺 𝘩𝘦𝘭𝘱:")
+                  
                   HStack (spacing:30){
-                      RoundedRectangle(cornerRadius: 20)
-                          .fill(.color1)
-                          .frame(width: 90, height: 90)
-                      RoundedRectangle(cornerRadius: 20)
-                          .fill(.color1)
-                          .frame(width: 90, height: 90)
-                      RoundedRectangle(cornerRadius: 20)
-                          .fill(.color1)
-                          .frame(width: 90, height: 90)
+                      
+                      
+                      
+                      ZStack{
+                          RoundedRectangle(cornerRadius: 20)
+                              .fill(.color1)
+                              .frame(width: 90, height: 90)
+                          Link("𝘋𝘦𝘱𝘳𝘦𝘴𝘴𝘪𝘰𝘯", destination: URL(string: "https://www.who.int/news-room/fact-sheets/detail/depression")!)
+                       
+                      }//zstack
+                      
+                      ZStack{
+                          RoundedRectangle(cornerRadius: 20)
+                              .fill(.color1)
+                              .frame(width: 90, height: 90)
+                          Link("𝘈𝘯𝘹𝘪𝘦𝘵𝘺", destination: URL(string: "https://adaa.org/understanding-anxiety/facts-statistics?gad_source=1&gad_campaignid=21784584426&gbraid=0AAAAADOzZlnWLAN8DnR2s9E_pbWvCjtCa&gclid=EAIaIQobChMItrmJtvLijgMVZSytBh2dYww1EAAYASAAEgLvHPD_BwE")!)
+                      }//zstack
+                      
+                      ZStack{
+                          RoundedRectangle(cornerRadius: 20)
+                              .fill(.color1)
+                              .frame(width: 90, height: 90)
+                          Link("𝘖𝘵𝘩𝘦𝘳 𝘪𝘯𝘧𝘰", destination: URL(string: "https://www.nyp.org/youthmentalhealth?utm_source=google&utm_medium=cpc&utm_campaign=21092678316&utm_content=160019785179&utm_term=teen%20mental%20health&gad_source=1&gad_campaignid=21092678316&gbraid=0AAAAAD5MYxA0XrxLm_ZwHwKGQ7IIYslkY&gclid=EAIaIQobChMI7-uH9trnjgMVfHF_AB1ynjfJEAAYASAAEgIVWvD_BwE")!)
+                          
+                      }//zstack
+                      
                   }//Hstack
+                  
+                  
+                  
+                  
+                  
+                  
                   Image("sunset")
                       .cornerRadius(20)
-                  Text("ℂ𝕠𝕞𝕞𝕠𝕟 𝕚𝕤𝕤𝕦𝕖𝕤")
+                  Text("𝕀𝕞𝕡𝕠𝕣𝕥𝕒𝕟𝕥 𝕥𝕠𝕡𝕚𝕔𝕤")
                       .font(.largeTitle)
                       .multilineTextAlignment(.trailing)
-                      
-                  RoundedRectangle(cornerRadius: 20)
-                      .fill(.color2)
-                      .frame(width: 359, height: 150)
+                   
+                  
+                  ZStack{
+                      RoundedRectangle(cornerRadius: 20)
+                          .fill(.color2)
+                          .frame(width: 359, height: 150)
+                      VStack{
+                          NavigationLink(destination: anxiety()) {
+                              Text("𝘈𝘯𝘹𝘪𝘦𝘵𝘺")
+                                  .foregroundColor(Color.black)
+                          }//navlink
+                          
+                            NavigationLink(destination: selfconfidence()) {
+                                Text("𝘚𝘦𝘭𝘧 𝘤𝘰𝘯𝘧𝘪𝘥𝘦𝘯𝘤𝘦")
+                                    .foregroundColor(Color.black)
+                            }//navlink
+                          
+                          NavigationLink(destination: depression()) {
+                              Text("𝘋𝘦𝘱𝘳𝘦𝘴𝘴𝘪𝘰𝘯")
+                                  .foregroundColor(Color.black)
+                          }//navlink
+                          
+                          NavigationLink(destination: motivation()) {
+                              Text("𝘔𝘰𝘵𝘪𝘷𝘢𝘵𝘪𝘰𝘯")
+                                  .foregroundColor(Color.black)
+                          }//navlink
+                          
+                      }//vstack
+                  }//zstack
+                  
+                  
+                  
+                  
+                  
+                  
                       
               }//VStack
               
+              //tobar:)
               .toolbar {
                   ToolbarItemGroup(placement: .status) {
                       NavigationLink(destination: ContentView()) {
                           Image(systemName: "house.fill")
                               .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for affirmations
-                      }
+                      }//navlink
                       NavigationLink(destination: LifelinesView()) {
                           Image(systemName: "phone.down.circle.fill")
                               .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for settings
-                      }
+                      }//navlink
                       NavigationLink(destination: affirmationpage()) {
                           Image(systemName: "person.fill.checkmark")
                               .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for profile
-                      }
+                      }//navlink
                       
-                  }
+                  }//toolbrtemgrp
               }//toolbar
               
               
