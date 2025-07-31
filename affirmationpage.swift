@@ -137,25 +137,28 @@ struct affirmationpage: View {
                                 .frame(height:60)
                         }//big quote
                         
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(Color(.boxcolor))
-                                .frame(width: 350, height: 90)
-                            HStack {
-                                
-                                NavigationLink(destination: ContentView()) {
-                                    Text("Home")
-                                }//navlink
-                                .tint(.black)
-                                
-                                
-                                
-                                
-                            }//jstack
-                        }//zstack for toolbar
-                        
+                                                
                         
                     }//vstack
+                    
+                    .toolbar {
+                        ToolbarItemGroup(placement: .status) {
+                            NavigationLink(destination: ContentView()) {
+                                Image(systemName: "house.fill")
+                                    .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for affirmations
+                            }
+                            NavigationLink(destination: LifelinesView()) {
+                                Image(systemName: "phone.down.circle.fill")
+                                    .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for settings
+                            }
+                            NavigationLink(destination: affirmationpage()) {
+                                Image(systemName: "person.fill.checkmark")
+                                    .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/) // Example icon for profile
+                            }
+                            
+                        }
+                    }//toolbar
+                    
                 }//zstack
             }
         }//body

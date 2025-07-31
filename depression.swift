@@ -97,6 +97,7 @@ struct depression: View {
                 }//hstack
             }//vstack
                 
+                
             }//zstack
         }//scrollview
     }//body

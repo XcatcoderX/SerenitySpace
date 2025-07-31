@@ -102,6 +102,7 @@ struct motivation: View {
                 }//hstack
             }//vstack
                 
+                
             }//zstack
         }//scrollview
             
