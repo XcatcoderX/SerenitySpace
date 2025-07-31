@@ -80,30 +80,65 @@ struct ContentView: View {
                   ZStack{
                       RoundedRectangle(cornerRadius: 20)
                           .fill(.color2)
-                          .frame(width: 359, height: 150)
-                      VStack{
-                          NavigationLink(destination: anxiety()) {
-                              Text("𝘈𝘯𝘹𝘪𝘦𝘵𝘺")
-                                  .foregroundColor(Color.black)
-                          }//navlink
-                          
-                            NavigationLink(destination: selfconfidence()) {
-                                Text("𝘚𝘦𝘭𝘧 𝘤𝘰𝘯𝘧𝘪𝘥𝘦𝘯𝘤𝘦")
-                                    .foregroundColor(Color.black)
-                            }//navlink
-                          
-                          NavigationLink(destination: depression()) {
-                              Text("𝘋𝘦𝘱𝘳𝘦𝘴𝘴𝘪𝘰𝘯")
-                                  .foregroundColor(Color.black)
-                          }//navlink
-                          
-                          NavigationLink(destination: motivation()) {
-                              Text("𝘔𝘰𝘵𝘪𝘷𝘢𝘵𝘪𝘰𝘯")
-                                  .foregroundColor(Color.black)
-                          }//navlink
-                          
-                      }//vstack
+                          .frame(width: 359, height: 50)
+                      
+                      NavigationLink(destination: anxiety()) {
+                          Text("𝘈𝘯𝘹𝘪𝘦𝘵𝘺")
+                              .font(.title2)
+                              .foregroundColor(Color.black)
+                      }//navlink
                   }//zstack
+                  
+                  
+                  
+                  ZStack{
+                      RoundedRectangle(cornerRadius: 20)
+                          .fill(.color2)
+                          .frame(width: 359, height: 50)
+                      
+                      NavigationLink(destination: selfconfidence()) {
+                          Text("𝘚𝘦𝘭𝘧 𝘤𝘰𝘯𝘧𝘪𝘥𝘦𝘯𝘤𝘦")
+                              .font(.title2)
+                              .foregroundColor(Color.black)
+                      }//navlink
+                  }//zstack
+                  
+                  ZStack{
+                      RoundedRectangle(cornerRadius: 20)
+                          .fill(.color2)
+                          .frame(width: 359, height: 50)
+                      
+                      NavigationLink(destination: depression()) {
+                          Text("𝘋𝘦𝘱𝘳𝘦𝘴𝘴𝘪𝘰𝘯")
+                              .font(.title2)
+                              .foregroundColor(Color.black)
+                      }//navlink
+                  }//zstack
+                  
+                  
+                  ZStack{
+                      RoundedRectangle(cornerRadius: 20)
+                          .fill(.color2)
+                          .frame(width: 359, height: 50)
+                      
+                      NavigationLink(destination: motivation()) {
+                          Text("𝘔𝘰𝘵𝘪𝘷𝘢𝘵𝘪𝘰𝘯")
+                              .font(.title2)
+                              .foregroundColor(Color.black)
+                      }//navlink
+                  }//zstack
+                  
+                  
+                  
+                  
+                
+                
+                
+                
+                            
+                          
+                     
+                
                   
                   
                   
